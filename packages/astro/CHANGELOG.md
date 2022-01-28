@@ -1,5 +1,11 @@
 # astro
 
+## 0.22.20
+
+### Patch Changes
+
+- [#2479](https://github.com/withastro/astro/pull/2479) [`005751a9`](https://github.com/withastro/astro/commit/005751a920c14423648fd45b53cebc94e5108e9f) Thanks [@natemoo-re](https://github.com/natemoo-re)! - Add the `escapeHTML` utility to `astro/internal`
+
 ## 0.22.19
 
 ### Patch Changes
@@ -1190,10 +1196,10 @@ For convenience, you may now also move your `astro.config.js` file to a top-leve
 
   ```js
   export default {
-    markdownOptions: {
-      remarkPlugins: ['remark-slug', ['remark-autolink-headings', { behavior: 'prepend' }]],
-      rehypePlugins: ['rehype-slug', ['rehype-autolink-headings', { behavior: 'prepend' }]],
-    },
+  	markdownOptions: {
+  		remarkPlugins: ['remark-slug', ['remark-autolink-headings', { behavior: 'prepend' }]],
+  		rehypePlugins: ['rehype-slug', ['rehype-autolink-headings', { behavior: 'prepend' }]],
+  	},
   };
   ```
 
@@ -1213,10 +1219,10 @@ For convenience, you may now also move your `astro.config.js` file to a top-leve
 
   ```js
   export default {
-    name: '@matthewp/my-renderer',
-    server: './server.js',
-    client: './client.js',
-    hydrationPolyfills: ['./my-polyfill.js'],
+  	name: '@matthewp/my-renderer',
+  	server: './server.js',
+  	client: './client.js',
+  	hydrationPolyfills: ['./my-polyfill.js'],
   };
   ```
 
